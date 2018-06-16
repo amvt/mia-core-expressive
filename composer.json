@@ -1,0 +1,24 @@
+{
+    "name": "mobileia/mia-core-expressive",
+    "description": "The library for Zend Expressive 3",
+    "version": "0.0.1",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [{
+        "name": "Matias Camiletti",
+        "homepage": "http://www.mobileia.com"
+    }],
+    "repositories": [{
+        "type": "git",
+        "url": "https://github.com/MobileIA/mia-core-expressive.git"
+    }],
+    "require": {
+        "php": "^7.1",
+        "zendframework/zend-diactoros": "^1.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mobileia\\Expressive\\Diactoros\\": "src/"
+        }
+    }
+}
