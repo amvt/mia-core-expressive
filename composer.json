@@ -18,7 +18,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Mobileia\\Expressive\\Diactoros\\": "src/"
+            "Mobileia\\Expressive\\Diactoros\\": "src/Diactoros/",
+            "Mobileia\\Expressive\\Request\\": "src/Request/"
         }
     }
 }
