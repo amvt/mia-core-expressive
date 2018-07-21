@@ -22,7 +22,7 @@ class MiaVerifyParamHandler implements \Psr\Http\Server\MiddlewareInterface
         foreach($this->params as $key){
             $value = $this->getParam($request, $key, null);
             if($value === null){
-                return new \Mobileia\Expressive\Diactoros\MiaJsonErrorResponse(["param_required"]);
+                return new \Mobileia\Expressive\Diactoros\MiaJsonErrorResponse(-1, 'No se ha enviado un parametro obligatorio.');
             }
         }
         return $handler->handle($request);
