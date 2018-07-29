@@ -1,7 +1,7 @@
 {
     "name": "mobileia/mia-core-expressive",
     "description": "The library for Zend Expressive 3",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [{
@@ -19,7 +19,8 @@
     "autoload": {
         "psr-4": {
             "Mobileia\\Expressive\\Diactoros\\": "src/Diactoros/",
-            "Mobileia\\Expressive\\Request\\": "src/Request/"
+            "Mobileia\\Expressive\\Request\\": "src/Request/",
+            "Mobileia\\Expressive\\Middleware\\": "src/Middleware/"
         }
     }
 }
