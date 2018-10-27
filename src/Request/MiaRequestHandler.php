@@ -5,7 +5,7 @@ abstract class MiaRequestHandler implements \Psr\Http\Server\RequestHandlerInter
     /**
      * Obtener parametro sin importar de donde provenga.
      */
-    protected function getParam(\Psr\Http\Message\ServerRequestInterface $request, $key, $default = null)
+    public function getParam(\Psr\Http\Message\ServerRequestInterface $request, $key, $default = null)
     {
         // Obtener parametros
         $params = $request->getParsedBody();
