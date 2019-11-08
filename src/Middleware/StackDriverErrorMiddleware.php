@@ -12,7 +12,9 @@ class StackDriverErrorMiddleware
     public function __invoke($container)
     {
         // Iniciar reporting
-        \Google\Cloud\ErrorReporting\Bootstrap::init();
+        if (isset($_SERVER['GAE_SERVICE'])) {
+            \Google\Cloud\ErrorReporting\Bootstrap::init();
+        }
         // Devolver cualquier objeto
         return new StackDriverErrorMiddleware();
     }
