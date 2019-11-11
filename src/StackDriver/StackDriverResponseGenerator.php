@@ -44,6 +44,8 @@ class StackDriverResponseGenerator
             ->getBody()
             ->write($this->whoops->handleException($e));
         $this->whoops->writeToOutput($sendOutputFlag);*/
+        // Registrar exception en StackDriver
+        \Google\Cloud\ErrorReporting\Bootstrap::exceptionHandler($e);
 
         return $response;
     }
