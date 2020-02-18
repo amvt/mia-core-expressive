@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mobileia\Expressive;
+namespace Mobileia\Expressive\Config;
 
 /**
  * The configuration provider for the App module

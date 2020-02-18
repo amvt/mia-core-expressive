@@ -1,7 +1,7 @@
 {
     "name": "mobileia/mia-core-expressive",
     "description": "The library for Zend Expressive 3",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "minimum-stability": "stable",
     "license": "MIT",
     "authors": [{
@@ -27,7 +27,8 @@
             "Mobileia\\Expressive\\StackDriver\\": "src/StackDriver/",
             "Mobileia\\Expressive\\Helper\\": "src/Helper/",
             "Mobileia\\Expressive\\Google\\": "src/Google/",
-            "Mobileia\\Expressive\\Factory\\": "src/Factory/"
+            "Mobileia\\Expressive\\Factory\\": "src/Factory/",
+            "Mobileia\\Expressive\\Config\\": "src/Config/"
         }
     }
 }
