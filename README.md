@@ -8,7 +8,7 @@ composer require mobileia/mia-core-expressive
 2. Incluir configuración en el archivo: "config/config.php"
 ```php
 // Configurar modulo de emails
-\Mobileia\Expressive\ConfigProvider::class,
+\Mobileia\Expressive\Config\ConfigProvider::class,
 
 // Default App module config
 //App\ConfigProvider::class,
