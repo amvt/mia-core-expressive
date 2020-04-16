@@ -40,7 +40,7 @@ class GoogleStorageUploadHandler extends \Mobileia\Expressive\Request\MiaRequest
         // Devolvemos respuesta
         return new \Mobileia\Expressive\Diactoros\MiaJsonResponse(array(
             'name' => $generatedName,
-            'url' => 'https://storage.cloud.google.com/' . $this->bucketName . '/' . $generatedName
+            'url' => 'https://storage.googleapis.com/' . $this->bucketName . '/' . $generatedName
         ));
     }
     
