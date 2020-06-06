@@ -62,5 +62,7 @@ class GoogleStorageUploadHandler extends \Mobileia\Expressive\Request\MiaRequest
         }else if($mimetype == 'image/webp'){
             return '.webp';
         }
+        
+        return '.jpg';
     }
 }
