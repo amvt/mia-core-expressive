@@ -61,6 +61,8 @@ class GoogleStorageUploadHandler extends \Mobileia\Expressive\Request\MiaRequest
             return '.gif';
         }else if($mimetype == 'image/webp'){
             return '.webp';
+        }else if($mimetype == 'application/pdf'){
+            return '.pdf';
         }
         
         return '.jpg';
