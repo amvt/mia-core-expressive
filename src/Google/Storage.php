@@ -54,4 +54,12 @@ class Storage
             'name' => $fileBucketName
         ]);
     }
+    /**
+     * 
+     */
+    public function register()
+    {
+        // Registramos stream
+        $this->service->registerStreamWrapper();
+    }
 }
