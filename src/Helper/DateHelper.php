@@ -22,6 +22,7 @@ class DateHelper
     
     public static function parseOnlyDate($string)
     {
+        $hasBarra = false;
         if(stripos($string, '/') !== false){
             $hasBarra = true;
         }
