@@ -11,6 +11,9 @@ class DateHelper
 {
     public static function toMySQL($string)
     {
+        if($string == ''){
+            return null;
+        }
         $date = substr($string, 0, 10);
         $time = '';
         if(strlen($string) > 11){
