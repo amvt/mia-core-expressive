@@ -63,6 +63,8 @@ class GoogleStorageUploadHandler extends \Mobileia\Expressive\Request\MiaRequest
             return '.webp';
         }else if($mimetype == 'application/pdf'){
             return '.pdf';
+        }else if($mimetype == 'video/x-matroska'||$mimetype == 'video/x-matroska;codecs=avc1,opus') {
+            return '.mkv';
         }
         
         return '.jpg';
