@@ -35,4 +35,13 @@ abstract class MiaRequestHandler implements \Psr\Http\Server\RequestHandlerInter
         }
         return $default;
     }
+    
+    /**
+     * Obtener todos los parametros
+     */
+    public function getAllParam(\Psr\Http\Message\ServerRequestInterface $request)
+    {
+        // Obtener parametros
+        return array_merge($request->getQueryParams(), $request->getParsedBody());
+    }
 }
