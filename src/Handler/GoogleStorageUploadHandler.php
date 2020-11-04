@@ -29,7 +29,7 @@ class GoogleStorageUploadHandler extends \Mobileia\Expressive\Request\MiaRequest
         // recorremos archivos enviadoss
         foreach($request->getUploadedFiles() as $file){
             // Generamos nombre
-            $generatedName = 'file_'. time() . $this->getExtension($file->getClientMediaType());
+            $generatedName = $file->getClientFilename();
             // Subimos archivo a Storage
             $storage->uploadFile($this->bucketName, $generatedName, $file->getStream()->detach());
         }
